@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/building/1.0"
+            class="net.opengis.citygml.building.BuildingPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="building"
+            class="net.opengis.citygml.building.util.BuildingResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/1.0"
+            class="net.opengis.citygml.CitygmlPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="citygml"
+            class="net.opengis.citygml.util.CitygmlResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/gml"
+            class="net.opengis.gml.GmlPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="gml"
+            class="net.opengis.gml.util.GmlResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.w3.org/1999/xlink"
+            class="org.w3._1999.xlink.XlinkPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="xlink"
+            class="org.w3._1999.xlink.util.XlinkResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"
+            class="org.oasis.xAL.XALPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="xal"
+            class="org.oasis.xAL.util.XALResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/texturedsurface/1.0"
+            class="net.opengis.citygml.texturedsurface.TexturedsurfacePackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="texturedsurface"
+            class="net.opengis.citygml.texturedsurface.util.TexturedsurfaceResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/appearance/1.0"
+            class="net.opengis.citygml.appearance.AppearancePackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="appearance"
+            class="net.opengis.citygml.appearance.util.AppearanceResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/transportation/1.0"
+            class="net.opengis.citygml.transportation.TransportationPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="transportation"
+            class="net.opengis.citygml.transportation.util.TransportationResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/relief/1.0"
+            class="net.opengis.citygml.relief.ReliefPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="relief"
+            class="net.opengis.citygml.relief.util.ReliefResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/cityfurniture/1.0"
+            class="net.opengis.citygml.cityfurniture.CityfurniturePackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="cityfurniture"
+            class="net.opengis.citygml.cityfurniture.util.CityfurnitureResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/cityobjectgroup/1.0"
+            class="net.opengis.citygml.cityobjectgroup.CityobjectgroupPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="cityobjectgroup"
+            class="net.opengis.citygml.cityobjectgroup.util.CityobjectgroupResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/landuse/1.0"
+            class="net.opengis.citygml.landuse.LandusePackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="landuse"
+            class="net.opengis.citygml.landuse.util.LanduseResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/vegetation/1.0"
+            class="net.opengis.citygml.vegetation.VegetationPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="vegetation"
+            class="net.opengis.citygml.vegetation.util.VegetationResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/waterbody/1.0"
+            class="net.opengis.citygml.waterbody.WaterbodyPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="waterbody"
+            class="net.opengis.citygml.waterbody.util.WaterbodyResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.opengis.net/citygml/generics/1.0"
+            class="net.opengis.citygml.generics.GenericsPackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="generics"
+            class="net.opengis.citygml.generics.util.GenericsResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.w3.org/2001/SMIL20/"
+            class="org.w3._2001.smil20.Smil20Package"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="smil20"
+            class="org.w3._2001.smil20.util.Smil20ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.w3.org/2001/SMIL20/Language"
+            class="org.w3._2001.smil20.language.LanguagePackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="language"
+            class="org.w3._2001.smil20.language.util.LanguageResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.w3.org/XML/1998/namespace"
+            class="org.w3.xml._1998.namespace.NamespacePackage"
+            genModel="model/CityGML.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="namespace"
+            class="org.w3.xml._1998.namespace.util.NamespaceResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

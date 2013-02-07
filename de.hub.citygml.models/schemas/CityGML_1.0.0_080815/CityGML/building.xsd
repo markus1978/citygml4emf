@@ -40,8 +40,7 @@
                     <xs:element name="class" type="BuildingClassType" minOccurs="0"/>
                     <xs:element name="function" type="BuildingFunctionType" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element name="usage" type="BuildingUsageType" minOccurs="0" maxOccurs="unbounded"/>
-                    <xs:element name="yearOfConstruction" type="xs:gYear" minOccurs="0"/>
-                    <xs:element name="yearOfDemolition" type="xs:gYear" minOccurs="0"/>
+ 
                     <xs:element name="roofType" type="RoofTypeType" minOccurs="0"/>
                     <xs:element name="measuredHeight" type="gml:LengthType" minOccurs="0"/>
                     <xs:element name="storeysAboveGround" type="xs:nonNegativeInteger" minOccurs="0"/>

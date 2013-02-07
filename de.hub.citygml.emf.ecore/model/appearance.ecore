@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="appearance"
+    nsURI="http://www.opengis.net/citygml/appearance/1.0" nsPrefix="app">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Top level GML schema&#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Basic support for tracking moving objects and objects with changing state.     &#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;GML Feature schema. &#x9;&#x9;      &#xA;    Copyright (c) 2001-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Copyright (c) 2001-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Copyright (c) 2001-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Extends the units.xsd and basicTypes.xsd schemas with types for recording measures using specific types of units, especially the measures and units needed for coordinate reference systems and coordinate operations. The specific unit types encoded are length, angle, scale factor, time, area, volume, speed, and grid length. This schema allows angle values to be recorded as single numbers or in degree-minute-second format. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;Parts of this schema are based on Subclause 6.5.7 of ISO/CD 19103 Geographic information - Conceptual schema language, on Subclause A.5.2.2.3 of ISO/CD 19118 Geographic information - Encoding, and on Subclause 4.7 of OpenGIS Recommendation Paper OGC 02-007r4 Units of Measure Use and Definition Recommendations.&#xA;Builds on gmlBase.xsd to encode units of measure (or uom), including definitions of units of measure and dictionaries of such definitions. GML 3.0 candidate schema, primary editor: Arliss Whiteside. Last updated 2005-06-22.&#xA;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;Parts of this schema are based on Subclause 6.5.7 of ISO/CD 19103 Geographic information - Conceptual schema language, on Subclause A.5.2.2.3 of ISO/CD 19118 Geographic information - Encoding, and on most of OpenGIS Recommendation Paper OGC 02-007r4 Units of Measure Use and Definition Recommendations.&#xA;&#xA;&#x9;&#x9;&#x9;Dictionary schema for GML 3.1.1 &#xA;&#x9;&#x9;&#x9;Components to support the lists of definitions.  &#xA;    Copyright (c) 2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;GML base schema for GML 3&#xA;&#x9;&#x9;Components to support the GML encoding model.  &#xA;&#x9;&#x9;The abstract Schematron rules can be used by any schema that includes gmlBase.  &#xA;&#x9;&#x9;Copyright (c) 2001-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#xA;    Generic simpleContent components for use in GML &#xA;    Copyright (c) 2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;    &#xA;&#xA;&#x9;&#x9;&#x9;GML 3.0 candidate xlinks schema. Copyright (c) 2001 OGC, All Rights Reserved.&#xA;&#x9;&#x9;&#xA;The temporal schema for GML 3.1 provides constructs for handling time-varying spatial data. &#xA;    This schema reflects a partial implementation of the model described in ISO 19108:2002. &#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;This schema defines &quot;direction&quot; element and type.&#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#xA;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;&#xA;Copyright (c) 2001-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Copyright (c) 2001-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Copyright (c) 2001-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;GML Coverage schema. &#xA;        Copyright (c) 2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;GML conformant schema for Values in which the  &#xA;&#x9;&#x9;    * scalar Value types and lists have their values recorded in simpleContent elements &#xA;&#x9;&#x9;    * complex Value types are built recursively&#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Grid geometries&#xA;    A subset of implicit geometries&#xA;    Designed for use with GML Coverage schema, but maybe useful elsewhere as well.  &#xA;    &#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;How to encode coordinate reference system definitions. Builds on referenceSystems.xsd to encode the data needed to define coordinate reference systems, including the specific subtypes of coordinate reference systems. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;This schema encodes the Coordinate Reference System (SC_) package of the extended UML Model for OGC Abstract Specification Topic 2: Spatial Referencing by Coordinates, with the exception of the abstract &quot;SC_CRS&quot; class. The &quot;SC_CRS&quot; class is encoded in referenceSystems.xsd, to eliminate the (circular) references from coordinateOperations.xsd to coordinateReferenceSystems.xsd. That UML model is adapted from ISO 19111 - Spatial referencing by coordinates, as described in Annex C of Topic 2. &#xA;&#x9;&#x9;Caution: The CRS package in GML 3.1 and GML 3.1.1 is preliminary, and is expected to undergo some modifications that are not backward compatible during the development of GML 3.2 (ISO 19136). The GML 3.2 package will implement the model described in the revised version of ISO 19111. &#xA;How to encode coordinate system definitions. Builds on referenceSystems.xsd to encode the data needed to define coordinate systems, including the specific subtypes of coordinate systems. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;This schema encodes the Coordinate System (CS_) package of the extended UML Model for OGC Abstract Specification Topic 2: Spatial Referencing by Coordinates. That UML model is adapted from ISO 19111 - Spatial referencing by coordinates, as described in Annex C of Topic 2. &#xA;&#x9;&#x9;Caution: The CRS package in GML 3.1 and GML 3.1.1 is preliminary, and is expected to undergo some modifications that are not backward compatible during the development of GML 3.2 (ISO 19136). The GML 3.2 package will implement the model described in the revised version of ISO 19111. &#xA;How to encode reference system definitions. Builds on several other parts of GML 3 to encode the data needed to define reference systems. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;This schema encodes the Reference System (RS_) package of the extended UML Model for OGC Abstract Specification Topic 2: Spatial Referencing by Coordinates. That UML model is adapted from ISO 19111 - Spatial referencing by coordinates, as described in Annex C of Topic 2. The SC_CRS class is also encoded here, to eliminate the (circular) references from coordinateOperations.xsd to coordinateReferenceSystems.xsd. The RS_SpatialReferenceSystemUsingGeographicIdentifier class is not encoded, since it is not applicable to coordinate positions. The CI_Citation class is not directly encoded, since such information can be included as metaDataProperty elements which are optionally allowed. A modified version of the EX_Extent (DataType) class from ISO 19115 is currently encoded here, using GML 3 schema types. (A more extensive version of the EX_Extent package might be XML encoded in the future, probably in a separate extent.xsd schema.)&#xA;&#x9;&#x9;Caution: The CRS package in GML 3.1 and GML 3.1.1 is preliminary, and is expected to undergo some modifications that are not backward compatible during the development of GML 3.2 (ISO 19136). The GML 3.2 package will implement the model described in the revised version of ISO 19111.&#xA;How to encode datum definitions. Builds on referenceSystems.xsd to encode the data needed to define datums, including the specific subtypes of datums. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;This schema encodes the Datum (CD_) package of the extended UML Model for OGC Abstract Specification Topic 2: Spatial Referencing by Coordinates. That UML model is adapted from ISO 19111 - Spatial referencing by coordinates, as described in Annex C of Topic 2. &#xA;&#x9;&#x9;Caution: The CRS package in GML 3.1 and GML 3.1.1 is preliminary, and is expected to undergo some modifications that are not backward compatible during the development of GML 3.2 (ISO 19136). The GML 3.2 package will implement the model described in the revised version of ISO 19111. &#xA;How to encode coordinate operation definitions. Builds on referenceSystems.xsd to encode the data needed to define coordinate operations, including Transformations, Conversions, and other specific subtypes of operations. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;This schema encodes the Coordinate Operation (CC_) package of the extended UML Model for OGC Abstract Specification Topic 2: Spatial Referencing by Coordinates. That UML model is adapted from ISO 19111 - Spatial referencing by coordinates, as described in Annex C of Topic 2. &#xA;&#x9;&#x9;Caution: The CRS package in GML 3.1 and GML 3.1.1 is preliminary, and is expected to undergo some modifications that are not backward compatible during the development of GML 3.2 (ISO 19136). The GML 3.2 package will implement the model described in the revised version of ISO 19111. &#xA;How to encode positional data quality information. Builds on units.xsd to encode the data needed to describe the positional accuracy of coordinate operations. &#xA;&#x9;&#x9;Copyright (c) 2002-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;This schema encodes the Data Quality (DQ) package of the extended UML Model for OGC Abstract Specification Topic 2: Spatial Referencing by Coordinates. That UML model is adapted from ISO 19111 - Spatial referencing by coordinates, as described in Annex C of Topic 2. &#xA;&#x9;&#x9;Caution: The CRS package in GML 3.1 and GML 3.1.1 is preliminary, and is expected to undergo some modifications that are not backward compatible during the development of GML 3.2 (ISO 19136). The GML 3.2 package will implement the model described in the revised version of ISO 19111. &#xA;Observation schema for GML 3.1     &#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;Default Style schema for GML 3.1.0&#xA;&#x9;&#x9;Copyright (c) 2001-2005 OGC, All Rights Reserved. For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;&#x9;&#x9;Compliance: reference to ISO Specifications&#xA;The Temporal Reference Systems schema for GML 3.1 provides constructs for handling various styles of temporal reference system. &#xA;    This schema reflects a partial implementation of the model described in ISO 19108:2002. &#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;The temporal topology schema for ISO19136 provides constructs for handling topological complexes and &#xA;&#x9;&#x9;temporal feature relationships. &#xA;&#x9;&#x9;Temporal geometric characteristics of features are represented as instants and periods. &#xA;&#x9;&#x9;While, temporal context of features that does not relate to the position of time is described as connectivity relationships &#xA;&#x9;&#x9;among instants and periods. These relationships are called temporal topology as they do not change in time, &#xA;&#x9;&#x9;as long as the direction of time does not change. &#xA;&#x9;&#x9;It is used effectively in the case of describing a family tree expressing evolution of species, an ecological cycle, &#xA;&#x9;&#x9;a lineage of lands or buildings, or a history of separation and merger of administrative boundaries.&#xA;&#x9;&#x9;This schema reflects a partial yet consistent implementation of the model described in ISO 19108:2002. &#xA;    Copyright (c) 2002-2005 OGC, All Rights Reserved.&#xA;&#x9;For conditions, see OGC Software Notice http://www.opengeospatial.org/about/?page=ipr&#xA;xAL: eXtensible Address Language &#xA;This is an XML document type definition (DTD) for&#xA;defining addresses.&#xA;Original Date of Creation: 1 March 2001&#xA;Copyright(c) 2000, OASIS. All Rights Reserved [http://www.oasis-open.org]&#xA;Contact: Customer Information Quality Technical Committee, OASIS&#xA;http://www.oasis-open.org/committees/ciq&#xA;VERSION: 2.0 [MAJOR RELEASE] Date of Creation: 01 May 2002&#xA;Last Update: 24 July 2002&#xA;Previous Version: 1.3&#xA;Common Attributes:Type - If not documented then it means, possible values of Type not limited to: Official, Unique, Abbreviation, OldName, Synonym&#xA;Code:Address element codes are used by groups like postal groups like ECCMA, ADIS, UN/PROLIST for postal services"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:gml:3.1.1">
+    <details key="appinfo" value="gml.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:dynamicFeature:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:feature:v3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:geometryBasic2d:3.1.1">
+    <details key="appinfo" value="geometryBasic2d.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:geometryBasic0d1d:v3.1.1">
+    <details key="appinfo" value="geometryBasic0d1d.xsd&#xA;&#xA;&#x9;&#x9;&#x9;&lt;sch:title xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;>Schematron validation&lt;/sch:title>&#xA;&#x9;&#x9;&#x9;&lt;sch:pattern name=&quot;Check SRS tags&quot; xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;sch:rule abstract=&quot;true&quot; id=&quot;CRSLabels&quot;>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:report test=&quot;not(@srsDimension) or @srsName&quot;>The presence of a dimension attribute implies the presence of the srsName attribute.&lt;/sch:report>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:report test=&quot;not(@axisLabels) or @srsName&quot;>The presence of an axisLabels attribute implies the presence of the srsName attribute.&lt;/sch:report>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:report test=&quot;not(@uomLabels) or @srsName&quot;>The presence of an uomLabels attribute implies the presence of the srsName attribute.&lt;/sch:report>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:report test=&quot;(not(@uomLabels) and not(@axisLabels)) or (@uomLabels and @axisLabels)&quot;>The presence of an uomLabels attribute implies the presence of the axisLabels attribute and vice versa.&lt;/sch:report>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/sch:rule>&#xA;&#x9;&#x9;&#x9;&lt;/sch:pattern>&#xA;&#x9;&#x9;&#x9;&lt;sch:pattern name=&quot;Check Dimension&quot; xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;sch:rule abstract=&quot;true&quot; id=&quot;Count&quot;>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:report test=&quot;not(@count) or @srsDimension&quot;>The presence of a count attribute implies the presence of the dimension attribute.&lt;/sch:report>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/sch:rule>&#xA;&#x9;&#x9;&#x9;&lt;/sch:pattern>&#xA;&#x9;&#x9;"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-measures:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-units:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:dictionary:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:gmlBase:3.1.1">
+    <details key="appinfo" value="&#xA;&#x9;&#x9;&#x9;&lt;sch:title xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;>Schematron validation&lt;/sch:title>&#xA;&#x9;&#x9;&#x9;&lt;sch:ns prefix=&quot;gml&quot; uri=&quot;http://www.opengis.net/gml&quot; xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;/>&#xA;&#x9;&#x9;&#x9;&lt;sch:ns prefix=&quot;xlink&quot; uri=&quot;http://www.w3.org/1999/xlink&quot; xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;/>&#xA;&#x9;&#x9;&#x9;&lt;sch:pattern name=&quot;Check either href or content not both&quot; xmlns:sch=&quot;http://www.ascc.net/xml/schematron&quot;>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;sch:rule abstract=&quot;true&quot; id=&quot;hrefOrContent&quot;>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:report test=&quot;@xlink:href and (*|text())&quot;>Property element may not carry both a reference to an object and contain an object.&lt;/sch:report>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;sch:assert test=&quot;@xlink:href | (*|text())&quot;>Property element must either carry a reference to an object or contain an object.&lt;/sch:assert>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/sch:rule>&#xA;&#x9;&#x9;&#x9;&lt;/sch:pattern>&#xA;&#x9;&#x9;"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:basicTypes:3.1.1">
+    <details key="appinfo" value="basicTypes.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xlinks:v3.0c2">
+    <details key="appinfo" value="xlinks.xsd v3.0b2 2001-07"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:temporal:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:direction:3.1.1">
+    <details key="appinfo" value="direction.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:topology:3.1.1">
+    <details key="appinfo" value="topology.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:geometryComplexes:v3.1.1">
+    <details key="appinfo" value="geometryComplexes.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:geometryAggregates:3.1.1">
+    <details key="appinfo" value="geometryAggregates.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:geometryPrimitives:3.1.1">
+    <details key="appinfo" value="geometryPrimitives.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:coverage:3.1.1">
+    <details key="appinfo" value="coverage.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:valueObjects:3.1.1">
+    <details key="appinfo" value="valueObjects.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:grids:3.1.1">
+    <details key="appinfo" value="grids.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:coordinateReferenceSystems:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:coordinateSystems:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:referenceSystems:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:datums:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:coordinateOperations:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:dataQuality:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:observation:3.1.1">
+    <details key="appinfo" value="observation.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-defaultStyle:v3.1.0">
+    <details key="appinfo" value="defaultStyle.xsd"/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:temporalReferenceSystems:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eAnnotations source="urn:opengis:specification:gml:schema-xsd:temporalTopology:3.1.1">
+    <details key="appinfo" value=""/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractSurfaceDataType" eSuperTypes="gml.ecore#//AbstractFeatureType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Base class for textures and material. Contains only isFront-flag."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AbstractSurfaceDataType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isFront" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+        defaultValueLiteral="true" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="isFront"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfSurfaceDataGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfSurfaceData:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfSurfaceData"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfSurfaceData"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfSurfaceData:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractTextureParameterizationType"
+      abstract="true" eSuperTypes="gml.ecore#//AbstractGMLType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Base class for augmenting a link &quot;texture->surface&quot; with texture parameterization. Subclasses of&#xA;                this class define concrete parameterizations. Currently, texture coordinates and texture coordinate generation&#xA;                using a transformation matrix are available. "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AbstractTextureParameterizationType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfTextureParameterizationGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfTextureParameterization:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTextureParameterization"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTextureParameterization"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfTextureParameterization:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractTextureType" eSuperTypes="#//AbstractSurfaceDataType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Base class for textures. &quot;imageURI&quot; can contain any valid URI from references to a local file to&#xA;                preformatted web service requests. The linking to geometry and texture parameterization is provided by derived&#xA;                classes."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AbstractTextureType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageURI" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="imageURI"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimeType" eType="ecore:EDataType citygml.ecore#//MimeTypeType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="mimeType"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textureType" eType="#//TextureTypeType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="textureType"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wrapMode" eType="#//WrapModeType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="wrapMode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="borderColor" eType="#//ColorPlusOpacity">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="borderColor"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfTextureGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexture:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTexture"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfTexture:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AppearancePropertyType" eSuperTypes="gml.ecore#//FeaturePropertyType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Denotes the relation of a _CityObject resp. CityModel to its appearances. The AppearancePropertyType&#xA;                element must either carry a reference to a Appearance object or contain a Appearance object inline, but neither&#xA;                both nor none."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AppearancePropertyType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="appearance" eType="#//AppearanceType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Appearance"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AppearanceType" eSuperTypes="gml.ecore#//AbstractFeatureType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value=" Named container for all surface data (texture/material). All appearances of the same name (&quot;theme&quot;)&#xA;                within a CityGML file are considered a group. "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AppearanceType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="theme" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="theme"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="surfaceDataMember" upperBound="-1"
+        eType="#//SurfaceDataPropertyType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="surfaceDataMember"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfAppearanceGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfAppearance:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfAppearance"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfAppearance"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfAppearance:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Color" instanceClassName="java.util.List">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="List of three values (red, green, blue), separated by spaces. The values must be in the range&#xA;                between zero and one. "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Color"/>
+      <details key="baseType" value="http://www.opengis.net/citygml/1.0#doubleBetween0and1List"/>
+      <details key="length" value="3"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ColorPlusOpacity" instanceClassName="java.util.List">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="List of three or four values (red, green, blue, opacity), separated by spaces. The values must be in&#xA;                the range between zero and one. If no opacity is given, it is assumed as 1.0."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ColorPlusOpacity"/>
+      <details key="baseType" value="http://www.opengis.net/citygml/1.0#doubleBetween0and1List"/>
+      <details key="minLength" value="3"/>
+      <details key="maxLength" value="4"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value=""/>
+      <details key="kind" value="mixed"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mixed" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="elementWildcard"/>
+        <details key="name" value=":mixed"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xMLNSPrefixMap" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xmlns:prefix"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xSISchemaLocation" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xsi:schemaLocation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfAppearance"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfAppearance"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfGeoreferencedTexture"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfGeoreferencedTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfParameterizedTexture"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfParameterizedTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfSurfaceData"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfSurfaceData"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTexCoordGen"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexCoordGen"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTexCoordList"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexCoordList"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTexture"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTextureParameterization"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTextureParameterization"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfX3DMaterial"
+        upperBound="-2" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfX3DMaterial"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="surfaceData" upperBound="-2"
+        eType="#//AbstractSurfaceDataType" changeable="false" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_SurfaceData"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="http://www.opengis.net/gml#_Feature"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="texture" upperBound="-2"
+        eType="#//AbstractTextureType" changeable="false" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_Texture"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="_SurfaceData"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textureParameterization"
+        upperBound="-2" eType="#//AbstractTextureParameterizationType" changeable="false"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_TextureParameterization"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="http://www.opengis.net/gml#_GML"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="appearance" upperBound="-2"
+        eType="#//AppearancePropertyType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="appearance"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="http://www.opengis.net/citygml/1.0#_GenericApplicationPropertyOfCityObject"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="appearanceMember" upperBound="-2"
+        eType="#//AppearancePropertyType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="appearanceMember"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="http://www.opengis.net/gml#featureMember"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="georeferencedTexture" upperBound="-2"
+        eType="#//GeoreferencedTextureType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GeoreferencedTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="_Texture"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameterizedTexture" upperBound="-2"
+        eType="#//ParameterizedTextureType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ParameterizedTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="_Texture"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="texCoordGen" upperBound="-2"
+        eType="#//TexCoordGenType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TexCoordGen"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="_TextureParameterization"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="texCoordList" upperBound="-2"
+        eType="#//TexCoordListType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TexCoordList"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="_TextureParameterization"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="x3DMaterial" upperBound="-2"
+        eType="#//X3DMaterialType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="X3DMaterial"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="_SurfaceData"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoreferencedTextureType" eSuperTypes="#//AbstractTextureType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Specialization for georeferenced textures, i.e. textures using a planimetric projection. Such&#xA;                textures contain an implicit parameterization (either stored within the image file, in an acompanying world file,&#xA;                or using the &quot;referencePoint&quot; and &quot;orientation&quot;-elements). A georeference provided by &quot;referencePoint&quot; and&#xA;                &quot;orientation&quot; always takes precedence. The search order for an external georeference is determined by the boolean&#xA;                flag preferWorldFile. If this flag is set to true (its default value), a world file is looked for first and only&#xA;                if it is not found the georeference from the image data is used. If preferWorldFile is false, the world file is&#xA;                used only if no georeference from the image data is available. The &quot;boundedBy&quot;-property should contain the&#xA;                bounding box of the projected image data. Since a georeferenced texture has a unique parameterization, &quot;target&quot;&#xA;                only provides links to surface geometry without any additional texture parameterization. Only gml:MultiSurface or&#xA;                decendants of gml:AbstractSurfaceType are valid targets."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GeoreferencedTextureType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferWorldFile" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+        defaultValueLiteral="true" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="preferWorldFile"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="referencePoint" eType="ecore:EClass gml.ecore#//PointPropertyType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="referencePoint"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="orientation" eType="ecore:EDataType citygml.ecore#//TransformationMatrix2x2Type">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="orientation"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="target" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="target"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfGeoreferencedTextureGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfGeoreferencedTexture:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfGeoreferencedTexture"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfGeoreferencedTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfGeoreferencedTexture:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterizedTextureType" eSuperTypes="#//AbstractTextureType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Specialization for standard 2D textures. &quot;target&quot; provides the linking to surface geometry. Only&#xA;                gml:MultiSurface and decendants of gml:AbstractSurfaceType are valid targets. As property of the link, a texture&#xA;                parameterization either as set of texture coordinates or transformation matrix is given. "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ParameterizedTextureType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
+        eType="#//TextureAssociationType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="target"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfParameterizedTextureGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfParameterizedTexture:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfParameterizedTexture"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfParameterizedTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfParameterizedTexture:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SurfaceDataPropertyType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Denotes the relation of an Appearance to its surface data. The SurfaceDataPropertyType element must&#xA;                either carry a reference to a _SurfaceData object or contain a _SurfaceData object inline, but neither both nor&#xA;                none."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SurfaceDataPropertyType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="surfaceDataGroup" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_SurfaceData:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="surfaceData" eType="#//AbstractSurfaceDataType"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_SurfaceData"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_SurfaceData:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actuate" eType="ecore:EEnum xlink.ecore#//ActuateType"
+        unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&#xA;        The 'actuate' attribute is used to communicate the desired timing &#xA;        of traversal from the starting resource to the ending resource; &#xA;        it's value should be treated as follows:&#xA;        onLoad - traverse to the ending resource immediately on loading &#xA;                 the starting resource &#xA;        onRequest - traverse from the starting resource to the ending &#xA;                    resource only on a post-loading event triggered for &#xA;                    this purpose &#xA;        other - behavior is unconstrained; examine other markup in link &#xA;                for hints &#xA;        none - behavior is unconstrained&#xA;      "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="actuate"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="arcrole" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="arcrole"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="href" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="href"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="remoteSchema" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="remoteSchema"/>
+        <details key="namespace" value="http://www.opengis.net/gml"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="role"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="show" eType="ecore:EEnum xlink.ecore#//ShowType"
+        unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&#xA;        The 'show' attribute is used to communicate the desired presentation &#xA;        of the ending resource on traversal from the starting resource; it's &#xA;        value should be treated as follows: &#xA;        new - load ending resource in a new window, frame, pane, or other &#xA;              presentation context&#xA;        replace - load the resource in the same window, frame, pane, or &#xA;                  other presentation context&#xA;        embed - load ending resource in place of the presentation of the &#xA;                starting resource&#xA;        other - behavior is unconstrained; examine other markup in the &#xA;                link for hints &#xA;        none - behavior is unconstrained &#xA;      "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="show"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="title"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+        defaultValueLiteral="simple" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="type"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TexCoordGenType" eSuperTypes="#//AbstractTextureParameterizationType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Texture parameterization using a transformation matrix. The transformation matrix &quot;worldToTexture&quot;&#xA;                can be used to derive texture coordinates from an object's location. This 3x4 matrix T computes the coordinates&#xA;                (s,t) from a homogeneous world position p as (s,t) = (s'/q', t'/q') with (s', t', q') = T*p. Thus, perspective&#xA;                projections can be specified. The SRS can be specified using standard attributes. If an object is given in a&#xA;                different reference system, it is transformed to the SRS before applying the transformation. A transformation&#xA;                matrix can be used for whole surfaces. It is not required to specify it per LinearRing. "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TexCoordGenType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="worldToTexture" lowerBound="1"
+        eType="#//WorldToTextureType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="worldToTexture"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfTexCoordGenGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexCoordGen:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTexCoordGen"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexCoordGen"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfTexCoordGen:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TexCoordListType" eSuperTypes="#//AbstractTextureParameterizationType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Texture parameterization using texture coordinates: Each gml:LinearRing that is part of the surface&#xA;                requires a separate &quot;textureCoordinates&quot;-entry with 2 doubles per ring vertex. The &quot;ring&quot;- attribute provides the&#xA;                gml:id of the target LinearRing. It is prohibited to link texture coordinates to any other object type than&#xA;                LinearRing. Thus, surfaces not consisting of LinearRings cannot be textured this way. Use transformation matrices&#xA;                (see below) or georeferenced textures instead. "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TexCoordListType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textureCoordinates" lowerBound="1"
+        upperBound="-1" eType="#//TextureCoordinatesType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="textureCoordinates"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfTexCoordListGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexCoordList:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfTexCoordList"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfTexCoordList"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfTexCoordList:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextureAssociationType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Denotes the relation of a texture to a surface, that is augmented by a TextureParameterization&#xA;                object. The TextureAssociationType element must either carry a reference to a _TextureParameterization object or&#xA;                contain a _TextureParameterization object inline, but neither both nor none."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TextureAssociationType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textureParameterizationGroup"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_TextureParameterization:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textureParameterization"
+        eType="#//AbstractTextureParameterizationType" changeable="false" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_TextureParameterization"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_TextureParameterization:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actuate" eType="ecore:EEnum xlink.ecore#//ActuateType"
+        unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&#xA;        The 'actuate' attribute is used to communicate the desired timing &#xA;        of traversal from the starting resource to the ending resource; &#xA;        it's value should be treated as follows:&#xA;        onLoad - traverse to the ending resource immediately on loading &#xA;                 the starting resource &#xA;        onRequest - traverse from the starting resource to the ending &#xA;                    resource only on a post-loading event triggered for &#xA;                    this purpose &#xA;        other - behavior is unconstrained; examine other markup in link &#xA;                for hints &#xA;        none - behavior is unconstrained&#xA;      "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="actuate"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="arcrole" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="arcrole"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="href" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="href"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="remoteSchema" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="remoteSchema"/>
+        <details key="namespace" value="http://www.opengis.net/gml"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="role"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="show" eType="ecore:EEnum xlink.ecore#//ShowType"
+        unsettable="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&#xA;        The 'show' attribute is used to communicate the desired presentation &#xA;        of the ending resource on traversal from the starting resource; it's &#xA;        value should be treated as follows: &#xA;        new - load ending resource in a new window, frame, pane, or other &#xA;              presentation context&#xA;        replace - load the resource in the same window, frame, pane, or &#xA;                  other presentation context&#xA;        embed - load ending resource in place of the presentation of the &#xA;                starting resource&#xA;        other - behavior is unconstrained; examine other markup in the &#xA;                link for hints &#xA;        none - behavior is unconstrained &#xA;      "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="show"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="title"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+        defaultValueLiteral="simple" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="type"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="uri"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextureCoordinatesType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="textureCoordinates_._type"/>
+      <details key="kind" value="simple"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType gml.ecore#//DoubleList">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value=":0"/>
+        <details key="kind" value="simple"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ring" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="ring"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TextureTypeType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Textures can be qualified by the attribute textureType. The textureType differentiates between&#xA;                textures, which are specific for a certain object and are only used for that object (specific), and prototypic&#xA;                textures being typical for that kind of object and are used many times for all objects of that kind (typical). A&#xA;                typical texture may be replaced by a specific, if available. Textures may also be classified as unknown.&#xA;            "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TextureTypeType"/>
+    </eAnnotations>
+    <eLiterals name="specific"/>
+    <eLiterals name="typical" value="1"/>
+    <eLiterals name="unknown" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TextureTypeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TextureTypeType:Object"/>
+      <details key="baseType" value="TextureTypeType"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WorldToTextureType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="worldToTexture_._type"/>
+      <details key="kind" value="simple"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType citygml.ecore#//TransformationMatrix3x4Type">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value=":0"/>
+        <details key="kind" value="simple"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="axisLabels" eType="ecore:EDataType gml.ecore#//NCNameList">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ordered list of labels for all the axes of this CRS. The gml:axisAbbrev value should be used for these axis &#xA;&#x9;&#x9;&#x9;&#x9;labels, after spaces and forbiddden characters are removed. When the srsName attribute is included, this attribute is optional. &#xA;&#x9;&#x9;&#x9;&#x9;When the srsName attribute is omitted, this attribute shall also be omitted."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="axisLabels"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="srsDimension" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//PositiveInteger">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The &quot;srsDimension&quot; is the length of coordinate sequence (the number of entries in the list). This dimension is &#xA;&#x9;&#x9;&#x9;&#x9;specified by the coordinate reference system. When the srsName attribute is omitted, this attribute shall be omitted."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="srsDimension"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="srsName" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="In general this reference points to a CRS instance of gml:CoordinateReferenceSystemType &#xA;&#x9;&#x9;&#x9;&#x9;(see coordinateReferenceSystems.xsd). For well known references it is not required that the CRS description exists at the &#xA;&#x9;&#x9;&#x9;&#x9;location the URI points to. If no srsName attribute is given, the CRS must be specified as part of the larger context this &#xA;&#x9;&#x9;&#x9;&#x9;geometry element is part of, e.g. a geometric element like point, curve, etc. It is expected that this attribute will be specified &#xA;&#x9;&#x9;&#x9;&#x9;at the direct position level only in rare cases."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="srsName"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uomLabels" eType="ecore:EDataType gml.ecore#//NCNameList">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ordered list of unit of measure (uom) labels for all the axes of this CRS. The value of the string in the &#xA;&#x9;&#x9;&#x9;&#x9;gml:catalogSymbol should be used for this uom labels, after spaces and forbiddden characters are removed. When the &#xA;&#x9;&#x9;&#x9;&#x9;axisLabels attribute is included, this attribute shall also be included. When the axisLabels attribute is omitted, this attribute &#xA;&#x9;&#x9;&#x9;&#x9;shall also be omitted."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="uomLabels"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WrapModeType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Fill mode for a texture. &quot;wrap&quot; repeats the texture, &quot;clamp&quot; extends the edges of the texture, and&#xA;                &quot;border&quot; fills all undefined areas with &quot;borderColor&quot;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="WrapModeType"/>
+    </eAnnotations>
+    <eLiterals name="none"/>
+    <eLiterals name="wrap" value="1"/>
+    <eLiterals name="mirror" value="2"/>
+    <eLiterals name="clamp" value="3"/>
+    <eLiterals name="border" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="WrapModeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="WrapModeType:Object"/>
+      <details key="baseType" value="WrapModeType"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="X3DMaterialType" eSuperTypes="#//AbstractSurfaceDataType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Class for defining constant surface properties. It is based on X3D's material definition. In&#xA;                addition, &quot;isSmooth&quot; provides a hint for value interpolation. The link to surface geometry is established via the&#xA;                &quot;target&quot;-property. Only gml:MultiSurface or decendants of gml:AbstractSurfaceType are valid targets.&#xA;            "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="X3DMaterialType"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ambientIntensity" eType="ecore:EDataType citygml.ecore#//DoubleBetween0and1"
+        defaultValueLiteral="0.2" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ambientIntensity"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="diffuseColor" eType="#//Color"
+        defaultValueLiteral="0.8 0.8 0.8" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="diffuseColor"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="emissiveColor" eType="#//Color"
+        defaultValueLiteral="0.0 0.0 0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="emissiveColor"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="specularColor" eType="#//Color"
+        defaultValueLiteral="1.0 1.0 1.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="specularColor"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shininess" eType="ecore:EDataType citygml.ecore#//DoubleBetween0and1"
+        defaultValueLiteral="0.2" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="shininess"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transparency" eType="ecore:EDataType citygml.ecore#//DoubleBetween0and1"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="transparency"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSmooth" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="isSmooth"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="target" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="target"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericApplicationPropertyOfX3DMaterialGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="_GenericApplicationPropertyOfX3DMaterial:group"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericApplicationPropertyOfX3DMaterial"
+        upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="_GenericApplicationPropertyOfX3DMaterial"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="group" value="_GenericApplicationPropertyOfX3DMaterial:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

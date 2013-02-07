@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.building.presentation.BuildingModelWizardID"
+            name="%_UI_BuildingModelWizard_label"
+            class="net.opengis.citygml.building.presentation.BuildingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BuildingModelFile.gif">
+         <description>%_UI_BuildingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.building.presentation.BuildingEditorID"
+            name="%_UI_BuildingEditor_label"
+            icon="icons/full/obj16/BuildingModelFile.gif"
+            extensions="building"
+            class="net.opengis.citygml.building.presentation.BuildingEditor"
+            contributorClass="net.opengis.citygml.building.presentation.BuildingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.presentation.CitygmlModelWizardID"
+            name="%_UI_CitygmlModelWizard_label"
+            class="net.opengis.citygml.presentation.CitygmlModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CitygmlModelFile.gif">
+         <description>%_UI_CitygmlModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.presentation.CitygmlEditorID"
+            name="%_UI_CitygmlEditor_label"
+            icon="icons/full/obj16/CitygmlModelFile.gif"
+            extensions="citygml"
+            class="net.opengis.citygml.presentation.CitygmlEditor"
+            contributorClass="net.opengis.citygml.presentation.CitygmlActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.gml.presentation.GmlModelWizardID"
+            name="%_UI_GmlModelWizard_label"
+            class="net.opengis.gml.presentation.GmlModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GmlModelFile.gif">
+         <description>%_UI_GmlModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.gml.presentation.GmlEditorID"
+            name="%_UI_GmlEditor_label"
+            icon="icons/full/obj16/GmlModelFile.gif"
+            extensions="gml"
+            class="net.opengis.gml.presentation.GmlEditor"
+            contributorClass="net.opengis.gml.presentation.GmlActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.w3._1999.xlink.presentation.XlinkModelWizardID"
+            name="%_UI_XlinkModelWizard_label"
+            class="org.w3._1999.xlink.presentation.XlinkModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/XlinkModelFile.gif">
+         <description>%_UI_XlinkModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.w3._1999.xlink.presentation.XlinkEditorID"
+            name="%_UI_XlinkEditor_label"
+            icon="icons/full/obj16/XlinkModelFile.gif"
+            extensions="xlink"
+            class="org.w3._1999.xlink.presentation.XlinkEditor"
+            contributorClass="org.w3._1999.xlink.presentation.XlinkActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.oasis.xAL.presentation.XALModelWizardID"
+            name="%_UI_XALModelWizard_label"
+            class="org.oasis.xAL.presentation.XALModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/XALModelFile.gif">
+         <description>%_UI_XALModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.oasis.xAL.presentation.XALEditorID"
+            name="%_UI_XALEditor_label"
+            icon="icons/full/obj16/XALModelFile.gif"
+            extensions="xal"
+            class="org.oasis.xAL.presentation.XALEditor"
+            contributorClass="org.oasis.xAL.presentation.XALActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.texturedsurface.presentation.TexturedsurfaceModelWizardID"
+            name="%_UI_TexturedsurfaceModelWizard_label"
+            class="net.opengis.citygml.texturedsurface.presentation.TexturedsurfaceModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TexturedsurfaceModelFile.gif">
+         <description>%_UI_TexturedsurfaceModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.texturedsurface.presentation.TexturedsurfaceEditorID"
+            name="%_UI_TexturedsurfaceEditor_label"
+            icon="icons/full/obj16/TexturedsurfaceModelFile.gif"
+            extensions="texturedsurface"
+            class="net.opengis.citygml.texturedsurface.presentation.TexturedsurfaceEditor"
+            contributorClass="net.opengis.citygml.texturedsurface.presentation.TexturedsurfaceActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.appearance.presentation.AppearanceModelWizardID"
+            name="%_UI_AppearanceModelWizard_label"
+            class="net.opengis.citygml.appearance.presentation.AppearanceModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AppearanceModelFile.gif">
+         <description>%_UI_AppearanceModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.appearance.presentation.AppearanceEditorID"
+            name="%_UI_AppearanceEditor_label"
+            icon="icons/full/obj16/AppearanceModelFile.gif"
+            extensions="appearance"
+            class="net.opengis.citygml.appearance.presentation.AppearanceEditor"
+            contributorClass="net.opengis.citygml.appearance.presentation.AppearanceActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.transportation.presentation.TransportationModelWizardID"
+            name="%_UI_TransportationModelWizard_label"
+            class="net.opengis.citygml.transportation.presentation.TransportationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TransportationModelFile.gif">
+         <description>%_UI_TransportationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.transportation.presentation.TransportationEditorID"
+            name="%_UI_TransportationEditor_label"
+            icon="icons/full/obj16/TransportationModelFile.gif"
+            extensions="transportation"
+            class="net.opengis.citygml.transportation.presentation.TransportationEditor"
+            contributorClass="net.opengis.citygml.transportation.presentation.TransportationActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.relief.presentation.ReliefModelWizardID"
+            name="%_UI_ReliefModelWizard_label"
+            class="net.opengis.citygml.relief.presentation.ReliefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ReliefModelFile.gif">
+         <description>%_UI_ReliefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.relief.presentation.ReliefEditorID"
+            name="%_UI_ReliefEditor_label"
+            icon="icons/full/obj16/ReliefModelFile.gif"
+            extensions="relief"
+            class="net.opengis.citygml.relief.presentation.ReliefEditor"
+            contributorClass="net.opengis.citygml.relief.presentation.ReliefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.cityfurniture.presentation.CityfurnitureModelWizardID"
+            name="%_UI_CityfurnitureModelWizard_label"
+            class="net.opengis.citygml.cityfurniture.presentation.CityfurnitureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CityfurnitureModelFile.gif">
+         <description>%_UI_CityfurnitureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.cityfurniture.presentation.CityfurnitureEditorID"
+            name="%_UI_CityfurnitureEditor_label"
+            icon="icons/full/obj16/CityfurnitureModelFile.gif"
+            extensions="cityfurniture"
+            class="net.opengis.citygml.cityfurniture.presentation.CityfurnitureEditor"
+            contributorClass="net.opengis.citygml.cityfurniture.presentation.CityfurnitureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.cityobjectgroup.presentation.CityobjectgroupModelWizardID"
+            name="%_UI_CityobjectgroupModelWizard_label"
+            class="net.opengis.citygml.cityobjectgroup.presentation.CityobjectgroupModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CityobjectgroupModelFile.gif">
+         <description>%_UI_CityobjectgroupModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.cityobjectgroup.presentation.CityobjectgroupEditorID"
+            name="%_UI_CityobjectgroupEditor_label"
+            icon="icons/full/obj16/CityobjectgroupModelFile.gif"
+            extensions="cityobjectgroup"
+            class="net.opengis.citygml.cityobjectgroup.presentation.CityobjectgroupEditor"
+            contributorClass="net.opengis.citygml.cityobjectgroup.presentation.CityobjectgroupActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.landuse.presentation.LanduseModelWizardID"
+            name="%_UI_LanduseModelWizard_label"
+            class="net.opengis.citygml.landuse.presentation.LanduseModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LanduseModelFile.gif">
+         <description>%_UI_LanduseModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.landuse.presentation.LanduseEditorID"
+            name="%_UI_LanduseEditor_label"
+            icon="icons/full/obj16/LanduseModelFile.gif"
+            extensions="landuse"
+            class="net.opengis.citygml.landuse.presentation.LanduseEditor"
+            contributorClass="net.opengis.citygml.landuse.presentation.LanduseActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.vegetation.presentation.VegetationModelWizardID"
+            name="%_UI_VegetationModelWizard_label"
+            class="net.opengis.citygml.vegetation.presentation.VegetationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VegetationModelFile.gif">
+         <description>%_UI_VegetationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.vegetation.presentation.VegetationEditorID"
+            name="%_UI_VegetationEditor_label"
+            icon="icons/full/obj16/VegetationModelFile.gif"
+            extensions="vegetation"
+            class="net.opengis.citygml.vegetation.presentation.VegetationEditor"
+            contributorClass="net.opengis.citygml.vegetation.presentation.VegetationActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.waterbody.presentation.WaterbodyModelWizardID"
+            name="%_UI_WaterbodyModelWizard_label"
+            class="net.opengis.citygml.waterbody.presentation.WaterbodyModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/WaterbodyModelFile.gif">
+         <description>%_UI_WaterbodyModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.waterbody.presentation.WaterbodyEditorID"
+            name="%_UI_WaterbodyEditor_label"
+            icon="icons/full/obj16/WaterbodyModelFile.gif"
+            extensions="waterbody"
+            class="net.opengis.citygml.waterbody.presentation.WaterbodyEditor"
+            contributorClass="net.opengis.citygml.waterbody.presentation.WaterbodyActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.opengis.citygml.generics.presentation.GenericsModelWizardID"
+            name="%_UI_GenericsModelWizard_label"
+            class="net.opengis.citygml.generics.presentation.GenericsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GenericsModelFile.gif">
+         <description>%_UI_GenericsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.opengis.citygml.generics.presentation.GenericsEditorID"
+            name="%_UI_GenericsEditor_label"
+            icon="icons/full/obj16/GenericsModelFile.gif"
+            extensions="generics"
+            class="net.opengis.citygml.generics.presentation.GenericsEditor"
+            contributorClass="net.opengis.citygml.generics.presentation.GenericsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.w3._2001.smil20.presentation.Smil20ModelWizardID"
+            name="%_UI_Smil20ModelWizard_label"
+            class="org.w3._2001.smil20.presentation.Smil20ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Smil20ModelFile.gif">
+         <description>%_UI_Smil20ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.w3._2001.smil20.presentation.Smil20EditorID"
+            name="%_UI_Smil20Editor_label"
+            icon="icons/full/obj16/Smil20ModelFile.gif"
+            extensions="smil20"
+            class="org.w3._2001.smil20.presentation.Smil20Editor"
+            contributorClass="org.w3._2001.smil20.presentation.Smil20ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.w3._2001.smil20.language.presentation.LanguageModelWizardID"
+            name="%_UI_LanguageModelWizard_label"
+            class="org.w3._2001.smil20.language.presentation.LanguageModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LanguageModelFile.gif">
+         <description>%_UI_LanguageModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.w3._2001.smil20.language.presentation.LanguageEditorID"
+            name="%_UI_LanguageEditor_label"
+            icon="icons/full/obj16/LanguageModelFile.gif"
+            extensions="language"
+            class="org.w3._2001.smil20.language.presentation.LanguageEditor"
+            contributorClass="org.w3._2001.smil20.language.presentation.LanguageActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.w3.xml._1998.namespace.presentation.NamespaceModelWizardID"
+            name="%_UI_NamespaceModelWizard_label"
+            class="org.w3.xml._1998.namespace.presentation.NamespaceModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NamespaceModelFile.gif">
+         <description>%_UI_NamespaceModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.w3.xml._1998.namespace.presentation.NamespaceEditorID"
+            name="%_UI_NamespaceEditor_label"
+            icon="icons/full/obj16/NamespaceModelFile.gif"
+            extensions="namespace"
+            class="org.w3.xml._1998.namespace.presentation.NamespaceEditor"
+            contributorClass="org.w3.xml._1998.namespace.presentation.NamespaceActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
